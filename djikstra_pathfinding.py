@@ -1,3 +1,18 @@
+# ============================================================================
+# djikstra_pathfinding.py - the actual shortest-path engine of this project.
+#
+# PLAIN-ENGLISH SUMMARY: imagine the warehouse map as a city grid. Dijkstra's
+# algorithm is the careful explorer that always walks to the cheapest place
+# it knows next, writing down the best price it has found for every square,
+# until it reaches the destination. Because it always explores the cheapest
+# option first, the first time it arrives at the destination it is
+# guaranteed to have found the cheapest possible route.
+#
+# The detailed docstrings below explain each function; this header is the
+# quick tour. See main.py for a tiny example and warehouse_problem.py for a
+# version that also draws the path on the map.
+# ============================================================================
+
 import heapq
 import numpy as np
 from math import inf

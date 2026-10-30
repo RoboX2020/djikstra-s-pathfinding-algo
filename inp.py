@@ -1,3 +1,17 @@
+# ============================================================================
+# inp.py - a helper that invents random warehouse maps for testing.
+#
+# PLAIN-ENGLISH SUMMARY: you tell it how big a grid you want and how many
+# obstacles ('X') and priority lanes ('P') to sprinkle in, and it hands back
+# a random map with one start ('S') and one destination ('D'). Handy for
+# trying the pathfinder on many maps without drawing them by hand.
+#
+# Known quirks (the function's own Notes section below explains them in
+# detail): it never places two things in the same row or column, it can
+# raise an error if you ask for too many items on a small grid, and running
+# this file directly prints one example 10x10 map.
+# ============================================================================
+
 import numpy as np
 
 def grid(n_rows: int, n_cols: int, num_obstacles: int, num_priorities: int):

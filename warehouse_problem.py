@@ -1,3 +1,18 @@
+# ============================================================================
+# warehouse_problem.py - an older teammate version of the pathfinder, kept
+# for reference. It solves the same warehouse problem as
+# djikstra_pathfinding.py, and at the bottom it has its own demo ("DRIVER
+# CODE") that prints the map twice: once plain, and once with the found path
+# drawn in as '*' characters.
+#
+# If you are reading this project for the first time, start with
+# djikstra_pathfinding.py (the cleaned-up version); this file shows the same
+# ideas with slightly different wording and adds the map-drawing helpers
+# print_grid() and mark_path().
+#
+# RUN IT WITH:  python warehouse_problem.py
+# ============================================================================
+
 import heapq
 import numpy as np
 from math import inf
